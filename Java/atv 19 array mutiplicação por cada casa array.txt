@@ -1,0 +1,39 @@
+
+package facuatv7;
+import java.util.Scanner;
+
+
+public class FacuAtv7 {
+
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+            int [] lstnumero = new int [3];
+            int valor = 0;
+            int maior = 0;
+            String texto = "";
+            
+            
+                for(int i = 0;i<lstnumero.length;i++){
+                    System.out.println("Digite numero:");
+                    lstnumero[i] = entrada.nextInt();
+                }
+                
+            System.out.println("Digite um numero para mutiplicar");
+            valor = entrada.nextInt();
+            
+                for(int i = 0;i<lstnumero.length;i++){
+                    lstnumero[i] *= valor;
+                    texto += lstnumero[i]+ " ";
+                    if (lstnumero[i]>maior) {
+                        maior = lstnumero[i];
+                    }
+                }
+            System.out.println("Valores: "+texto);
+            System.out.println("Maior numero:"+maior);
+      }
+   }
+            
+        
+    
+

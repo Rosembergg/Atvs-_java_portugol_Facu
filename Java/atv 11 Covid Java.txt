@@ -1,0 +1,37 @@
+
+package facuatv7;
+import java.util.Scanner;
+
+
+public class FacuAtv7 {
+
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+
+        int  temp = 0, mat = 0, resp = 0, somatemp = 0, somacovid = 0 ;
+        
+        while (mat > -1){ 
+            System.out.println("Digite Matricula do aluno:");
+            mat = entrada.nextInt();
+            System.out.println("Digite temperatura: ");
+            temp = entrada.nextInt();
+            if (temp > 37){
+                System.out.println("Voê teve contato com alguem que testou positivo? Se sim digite 1, se não digite 2.");
+                resp = entrada.nextInt();
+                if(resp == 1){
+                    System.out.println("Você esta com covid!!");
+                    somacovid = somacovid+1;
+                }
+                else{
+                    System.out.println("Você esta com suspeita!!");
+                    somatemp = somatemp + 1;
+                }
+            }
+            
+        }
+            System.out.println("Quantidade de alunos com suspeita:"+ somatemp);
+            System.out.println("Quantidade de alunos com COVID:" + somacovid);
+        
+    }
+}

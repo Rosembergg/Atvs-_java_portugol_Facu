@@ -1,0 +1,30 @@
+
+package facuatv7;
+import java.util.Scanner;
+
+
+public class FacuAtv7 {
+
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+            int [] lstidade = new int [15];
+            int soma = 0, media = 0;
+            
+            
+            for(int i = 0;i<15;i++){
+                System.out.println("Digite nota:");
+                lstidade[i] = entrada.nextInt();
+                soma = soma + lstidade[i];
+            }
+
+            media = soma/lstidade.length;
+            System.out.println("Soma: "+soma+" Media:"+media);
+            
+            System.out.println("Notas digitadas:");
+            for (int i: lstidade){
+                System.out.println(i);
+            }
+         }
+      }
+    

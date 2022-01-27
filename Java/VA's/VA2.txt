@@ -1,0 +1,57 @@
+
+package facuatv7;
+import java.util.Scanner;
+
+
+public class FacuAtv7 {
+
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+
+              int opcao=0;
+                      int n6=0,n5=0,n4=0,n3=0,n2=0,n1=0;
+              
+              while (opcao  != -1){
+                  System.out.println("Digite de 1 a 6 para sua satisfação 1 (Muito Ruim) e 6 (Excepicional)");
+                  opcao = entrada.nextInt();
+              switch (opcao) {
+              case 1:
+                 System.out.println("Muito Ruim");
+                 n1 = n1+1;
+                break;
+              case 2:
+                System.out.println("Ruim");
+                n2 = n2+1;
+                break;
+              case 3:
+                System.out.println("Bom");
+                n3 = n3+1;
+                break;
+              case 4:
+                  System.out.println("Muito Bom");
+                n4 = n4+1;
+                break;
+              case 5:
+                  System.out.println("Excelente");
+                n5 = n5+1;
+                break;
+              case 6:
+                  System.out.println("Excepicional");
+                n6 = n6+1;
+                break;
+                }
+              }
+                  System.out.println("Soma Muito Ruim:"+n1);
+                  System.out.println("Soma Ruim:"+n2);
+                  System.out.println("Soma Bom:"+n3);
+                  System.out.println("Soma Muito Bom:"+n4);
+                  System.out.println("Soma Excelente:"+n5);
+                  System.out.println("Soma Excepicional:"+n6);
+            }
+         } 
+    
+            
+        
+    
+

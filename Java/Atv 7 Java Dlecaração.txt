@@ -1,0 +1,19 @@
+
+package facuatv7;
+
+
+public class FacuAtv7 {
+
+
+    public static void main(String[] args) {
+       String nome = "Rafael";
+       int idade = 21;
+       double peso = 85.5;
+       String cidade = "BH";
+       double altura = 1.91;
+       
+        System.out.println("Seu nome:"+nome+"\nIdade:"+idade
+        +" \nPeso:"+peso+" \nCidade:"+cidade+" \nAltura:"+altura);
+    }
+    
+}

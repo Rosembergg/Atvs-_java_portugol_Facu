@@ -1,0 +1,39 @@
+
+package facuatv7;
+import java.util.Scanner;
+
+
+public class FacuAtv7 {
+
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+
+        int  contador = 0, fratura = 0 , somafratura = 0;
+        String jogador;
+        
+        while (contador > -1){
+
+            System.out.println("Digite Nome do jogador:");
+            jogador = entrada.next();
+            System.out.println("Houve fratura ? 1:Sim - 2:Não ");
+            fratura = entrada.nextInt();
+            if (fratura == 1){
+                    System.out.println("Va para o banco.");
+                    somafratura = somafratura + 1;
+                }
+                else{
+                    System.out.println("Continue a jogar!");
+                }
+            
+                        System.out.println("Digite -1 para encerrar, cao contrario digite qualquer numero.");
+                        contador = entrada.nextInt();
+            }
+            System.out.println("Quantidade de jogadores fraturados:" + somafratura);
+        }
+     }
+    
+            
+        
+    
+

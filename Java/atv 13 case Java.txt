@@ -1,0 +1,51 @@
+
+package facuatv7;
+import java.util.Scanner;
+
+
+public class FacuAtv7 {
+
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+
+              int opcao = 0, saldo = 1500, deposito = 0, trans = 0, saque = 0;
+              System.out.println("Informe opçcao do caixa: 1-Para sacar, 2-Deposito, 3-Para transferencia, 4-Saldo");
+              opcao = entrada.nextInt();
+              switch (opcao) {
+              case 1:
+                  System.out.println("Valor Saque:");
+                  saque = entrada.nextInt();
+                  if(saque>saldo){
+                      System.out.println("Saldo insuficiente!!");
+                  }
+                  else{
+                      saldo = saldo- saque;
+                      System.out.println("Saldo:" + saldo);
+                  }
+                break;
+              case 2:
+                System.out.println("Digite o valor para deposito:");
+                deposito = entrada.nextInt();
+                saldo = saldo + deposito;
+                  System.out.println("Saldo atual:" + saldo);
+                break;
+              case 3:
+                System.out.println("Digite valor para transferencia:");
+                trans = entrada.nextInt();
+                if(trans > saldo){
+                    System.out.println("Saldo insuficinte para operação");
+                }
+                else{
+                    saldo = saldo - trans;
+                    System.out.println("Saldo atual:" + saldo);
+                }
+                break;
+              case 4:
+                    System.out.println("Seu saldo e :" +saldo);
+                  
+                break;
+            }
+
+        }
+     }

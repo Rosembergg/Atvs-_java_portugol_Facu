@@ -1,0 +1,30 @@
+programa{
+funcao inicio()
+{
+		inteiro voto=1,jao=0,pedro=0,carlos=0
+		
+		escreva("Códigos dos canditados: 10 – João / 20- Pedro / 30 – Carlos")
+			
+		enquanto (voto > 0){
+			
+		escreva("Digite o código do candidato: ")
+			leia(voto)
+			
+		        se(voto==10){
+		            escreva("Obrigado por votar no João!!")
+		            jao=jao+1
+		        }
+		        se(voto==20){
+		            escreva("Obrigado por votar no Pedro!!")
+		            pedro=pedro+1
+		        }
+		        se(voto==30){
+		            escreva("Obirgado por votar no Carlos!!") 
+		            carlos=carlos+1
+		        }
+		        se(voto==0){
+			        escreva("Votos de João:",jao," Votos de Pedro:",pedro," Votos de Carlos:",carlos)	            
+		        }
+		}
+	}
+}

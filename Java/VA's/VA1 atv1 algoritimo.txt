@@ -1,0 +1,33 @@
+programa
+{
+
+    funcao inicio()
+    {
+         inteiro  contador = 1, maxNota = 0, mimNota = 999 
+         real media = 0, soma = 0, nota = 0
+ 
+
+             enquanto (contador  <=6) {
+                   escreva("Informe a sua nota: ")
+                 leia(nota)
+
+                se (nota > maxNota) {
+                maxNota = nota}
+                se (nota <= mimNota) {
+                mimNota = nota}
+
+               soma = soma + nota
+               contador = contador + 1
+             }
+
+
+            media = soma/6
+            escreva("A média do aluno é: ", media, "\n")
+            escreva ( "A maior nota:  ", maxNota, "\n")
+            escreva ( "A menor nota:  ", mimNota)
+
+
+           }
+
+
+    }
